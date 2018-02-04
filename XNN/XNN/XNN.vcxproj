@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="src\dataparsers\dataparserfactory.cu" />
+    <CudaCompile Include="src\dataparsers\image\jpegdataparser.cu" />
+    <CudaCompile Include="src\data\imagedata.cu" />
+    <CudaCompile Include="src\neuralnetwork\activationfunctions.cu" />
+    <CudaCompile Include="src\neuralnetwork\configurationparser.cu" />
+    <CudaCompile Include="src\neuralnetwork\layers\convolutionallayer.cu" />
+    <CudaCompile Include="src\neuralnetwork\layers\dropoutlayer.cu" />
+    <CudaCompile Include="src\neuralnetwork\layers\inputlayer.cu" />
+    <CudaCompile Include="src\neuralnetwork\layers\layer.cu" />
+    <CudaCompile Include="src\neuralnetwork\layers\maxpoollayer.cu" />
+    <CudaCompile Include="src\neuralnetwork\layers\outputlayer.cu" />
+    <CudaCompile Include="src\neuralnetwork\layers\responsenormalizationlayer.cu" />
+    <CudaCompile Include="src\neuralnetwork\layers\softmaxlayer.cu" />
+    <CudaCompile Include="src\neuralnetwork\layers\standardlayer.cu" />
+    <CudaCompile Include="src\neuralnetwork\matrixoperations.cu" />
+    <CudaCompile Include="src\neuralnetwork\neuralnet.cu" />
+    <CudaCompile Include="src\start.cu" />
+    <CudaCompile Include="src\tests\dataparsers\image\testjpegdataparser.cu" />
+    <CudaCompile Include="src\tests\neuralnetwork\layers\mock\mockconvolutionallayer.cu" />
+    <CudaCompile Include="src\tests\neuralnetwork\layers\mock\mockdropoutlayer.cu" />
+    <CudaCompile Include="src\tests\neuralnetwork\layers\mock\mockinputlayer.cu" />
+    <CudaCompile Include="src\tests\neuralnetwork\layers\mock\mockmaxpoollayer.cu" />
+    <CudaCompile Include="src\tests\neuralnetwork\layers\mock\mockoutputlayer.cu" />
+    <CudaCompile Include="src\tests\neuralnetwork\layers\mock\mockresponsenormalizationlayer.cu" />
+    <CudaCompile Include="src\tests\neuralnetwork\layers\mock\mocksoftmaxlayer.cu" />
+    <CudaCompile Include="src\tests\neuralnetwork\layers\mock\mockstandardlayer.cu" />
+    <CudaCompile Include="src\tests\neuralnetwork\layers\testconvolutionallayer.cu" />
+    <CudaCompile Include="src\tests\neuralnetwork\layers\testdropoutlayer.cu" />
+    <CudaCompile Include="src\tests\neuralnetwork\layers\testmaxpoollayer.cu" />
+    <CudaCompile Include="src\tests\neuralnetwork\layers\testoutputlayer.cu" />
+    <CudaCompile Include="src\tests\neuralnetwork\layers\testresponsenormalizationlayer.cu" />
+    <CudaCompile Include="src\tests\neuralnetwork\layers\testsoftmaxlayer.cu" />
+    <CudaCompile Include="src\tests\neuralnetwork\layers\teststandardlayer.cu" />
+    <CudaCompile Include="src\tests\testsdriver.cu" />
+    <CudaCompile Include="src\tests\testingutils.cu" />
+    <CudaCompile Include="src\tools\datamaker.cu" />
+    <CudaCompile Include="src\tools\featurizer.cu" />
+    <CudaCompile Include="src\tools\trainer.cu" />
+    <CudaCompile Include="src\utils\consolehelper.cu" />
+    <CudaCompile Include="src\utils\utils.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\dataparsers\image\include\jpegdataparser.cuh" />
+    <ClInclude Include="src\dataparsers\include\dataparser.cuh" />
+    <ClInclude Include="src\dataparsers\include\dataparserfactory.cuh" />
+    <ClInclude Include="src\data\include\imagedata.cuh" />
+    <ClInclude Include="src\neuralnetwork\include\activationfunctions.cuh" />
+    <ClInclude Include="src\neuralnetwork\include\configurationparser.cuh" />
+    <ClInclude Include="src\neuralnetwork\include\matrixoperations.cuh" />
+    <ClInclude Include="src\neuralnetwork\include\neuralnet.cuh" />
+    <ClInclude Include="src\neuralnetwork\layers\include\convolutionallayer.cuh" />
+    <ClInclude Include="src\neuralnetwork\layers\include\dropoutlayer.cuh" />
+    <ClInclude Include="src\neuralnetwork\layers\include\inputlayer.cuh" />
+    <ClInclude Include="src\neuralnetwork\layers\include\layer.cuh" />
+    <ClInclude Include="src\neuralnetwork\layers\include\maxpoollayer.cuh" />
+    <ClInclude Include="src\neuralnetwork\layers\include\outputlayer.cuh" />
+    <ClInclude Include="src\neuralnetwork\layers\include\responsenormalizationlayer.cuh" />
+    <ClInclude Include="src\neuralnetwork\layers\include\softmaxlayer.cuh" />
+    <ClInclude Include="src\neuralnetwork\layers\include\standardlayer.cuh" />
+    <ClInclude Include="src\tests\dataparsers\image\include\testjpegdataparser.cuh" />
+    <ClInclude Include="src\tests\include\abstracttester.cuh" />
+    <ClInclude Include="src\tests\include\testsdriver.cuh" />
+    <ClInclude Include="src\tests\include\testingutils.cuh" />
+    <ClInclude Include="src\tests\neuralnetwork\layers\include\testconvolutionallayer.cuh" />
+    <ClInclude Include="src\tests\neuralnetwork\layers\include\testdropoutlayer.cuh" />
+    <ClInclude Include="src\tests\neuralnetwork\layers\include\testmaxpoollayer.cuh" />
+    <ClInclude Include="src\tests\neuralnetwork\layers\include\testoutputlayer.cuh" />
+    <ClInclude Include="src\tests\neuralnetwork\layers\include\testresponsenormalizationlayer.cuh" />
+    <ClInclude Include="src\tests\neuralnetwork\layers\include\testsoftmaxlayer.cuh" />
+    <ClInclude Include="src\tests\neuralnetwork\layers\include\teststandardlayer.cuh" />
+    <ClInclude Include="src\tests\neuralnetwork\layers\mock\include\mockconvolutionallayer.cuh" />
+    <ClInclude Include="src\tests\neuralnetwork\layers\mock\include\mockdropoutlayer.cuh" />
+    <ClInclude Include="src\tests\neuralnetwork\layers\mock\include\mockinputlayer.cuh" />
+    <ClInclude Include="src\tests\neuralnetwork\layers\mock\include\mockmaxpoollayer.cuh" />
+    <ClInclude Include="src\tests\neuralnetwork\layers\mock\include\mockoutputlayer.cuh" />
+    <ClInclude Include="src\tests\neuralnetwork\layers\mock\include\mockresponsenormalizationlayer.cuh" />
+    <ClInclude Include="src\tests\neuralnetwork\layers\mock\include\mocksoftmaxlayer.cuh" />
+    <ClInclude Include="src\tests\neuralnetwork\layers\mock\include\mockstandardlayer.cuh" />
+    <ClInclude Include="src\tools\include\datamaker.cuh" />
+    <ClInclude Include="src\tools\include\featurizer.cuh" />
+    <ClInclude Include="src\tools\include\trainer.cuh" />
+    <ClInclude Include="src\utils\include\config.cuh" />
+    <ClInclude Include="src\utils\include\consolehelper.cuh" />
+    <ClInclude Include="src\utils\include\utils.cuh" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9E0B7D55-9E44-4884-BF28-FC0DD5D58613}</ProjectGuid>
+    <RootNamespace>XNN</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 7.5.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>temp\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>target\$(Platform)\$(Configuration)\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)\import\jpeglib;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)\import\jpeglib;</IncludePath>
+    <OutDir>target\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>temp\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"
+copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;WIN64;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;jpeg.lib;nppc.lib;nppi.lib;cublas.lib;curand.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(CudaToolkitLibDir);$(ProjectDir)\import\jpeglib\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"
+copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <CodeGeneration>compute_52,sm_52</CodeGeneration>
+      <Include>
+      </Include>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"
+copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;WIN64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>cudart.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;jpeg.lib;nppc.lib;nppi.lib;cublas.lib;curand.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(CudaToolkitLibDir);$(ProjectDir)\import\jpeglib\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>echo copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"
+copy "$(CudaToolkitBinDir)\cudart*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <Include>
+      </Include>
+      <CodeGeneration>compute_52,sm_52</CodeGeneration>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 7.5.targets" />
+  </ImportGroup>
+</Project>

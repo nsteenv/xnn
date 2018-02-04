@@ -1,0 +1,24 @@
+// ----------------------------------------------------------------------------------------------------
+// Copyrighted by Marko Rakita.
+// Author: Marko Rakita
+// File contains: Coding standard to be used in our projects.
+// Created: 3/15/2014.
+// ----------------------------------------------------------------------------------------------------
+
+- Classes, namespaces and methods should use UpperCamelCase.
+- Parameters and variables use lowerCamelCase.
+- Use tabs.
+- Braces are required, even for single line statements.
+- No magic numbers in code!
+- Put space between 'if', 'for', 'while', etc.. and parenthesis. Also between: "a, b", "a + b = c",...
+- Constants should have prefix "c_", members "m_", global variables "g_", static variables "s_".
+- #define macros should be in all caps.
+- Interfaces classes should have prefix 'I'.
+- Use proper grammar in comments (and code generally), e.g.: // This function does this and that.
+- Put headers for each function and write proper info.
+- Put copyright header at the beginning of each file, use template like at the beginning of this file.
+- Do not put more than one statement or declare more than one variable in the single line.
+- [C++] Private methods come first, then protected, and then public methods and members.
+- [C#] Use string instead of String, int instead of Integer, etc. (whenever applicable).
+- [C#] Use string.isNullOrEmpty for checking if string is null or whitespace.
+- Use VS outline feature for sorting usings and removing unused usings.

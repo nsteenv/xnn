@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="utils">
+      <UniqueIdentifier>{51a24718-3069-44aa-ab8f-ea7dc32dc473}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils\include">
+      <UniqueIdentifier>{c92bfb5d-4dad-4b95-b3c2-d4962cb102b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{1e15f9a4-87c2-4fef-a269-b07d4d4bba65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\include">
+      <UniqueIdentifier>{96c26589-881a-467f-a349-11e48e7e6498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dataparsers">
+      <UniqueIdentifier>{a9165cac-6879-44c9-ae23-34d4bc6d3214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dataparsers\include">
+      <UniqueIdentifier>{f8177ac9-b926-41fc-b8ae-69e64bb215e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{85903b99-27c0-40e2-9bd4-94bde65d8bab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\include">
+      <UniqueIdentifier>{782a3a03-445f-46fb-90a5-20dda37ea3b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="neuralnetwork">
+      <UniqueIdentifier>{a96aa71b-c240-4ffd-801f-dbc0a47aac86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="neuralnetwork\layers">
+      <UniqueIdentifier>{4273f8c6-ace6-41bf-aecb-0edd8abeca29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="neuralnetwork\layers\include">
+      <UniqueIdentifier>{3df379d3-c466-4b24-9bde-6574ab4214ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="neuralnetwork\include">
+      <UniqueIdentifier>{4d9b2ea5-cb33-443b-bd00-ea7ea32367a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dataparsers\image">
+      <UniqueIdentifier>{9e3e59d3-bf22-43e1-8da9-9bd4a69a852b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dataparsers\image\include">
+      <UniqueIdentifier>{e2f68ed5-4ced-448b-ab22-494448df8d24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{884479ad-0ff7-436a-9c79-f5f110d39f96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\dataparsers">
+      <UniqueIdentifier>{503de85d-cc1d-4fb0-b29e-c410f27ea647}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\tools">
+      <UniqueIdentifier>{98904c94-0c91-4242-93c5-865adb2cb9ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\utils">
+      <UniqueIdentifier>{ffb5b3f3-62ea-4ab1-b8aa-eb778f9012af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\dataparsers\image">
+      <UniqueIdentifier>{991f74fb-24d5-4307-bd8f-9d577bb138e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\dataparsers\image\include">
+      <UniqueIdentifier>{4f1e2816-521b-44d1-bf8c-afbfe54e122a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\tools\include">
+      <UniqueIdentifier>{9134d648-e623-4371-9ad6-cf5328622ed0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\utils\include">
+      <UniqueIdentifier>{2f0650a8-01ab-42ba-88fb-f96d81ac2467}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\include">
+      <UniqueIdentifier>{d02c7cc4-9da0-41f0-8438-f43bfc17c1c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\neuralnetwork">
+      <UniqueIdentifier>{e7723999-8677-44fb-a45d-a8f2b7697c89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\neuralnetwork\layers">
+      <UniqueIdentifier>{bd60ecff-fff6-4053-b025-f1330858c157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\neuralnetwork\layers\include">
+      <UniqueIdentifier>{1e552d53-6205-40bf-9d9a-eaf833986d2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\neuralnetwork\layers\mock">
+      <UniqueIdentifier>{d2857efa-e833-40bc-8dd8-e82786836d66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests\neuralnetwork\layers\mock\include">
+      <UniqueIdentifier>{f550df65-4bd0-43e2-9616-ce7306a8aae6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="src\start.cu" />
+    <CudaCompile Include="src\utils\utils.cu">
+      <Filter>utils</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tools\datamaker.cu">
+      <Filter>tools</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tools\trainer.cu">
+      <Filter>tools</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\data\imagedata.cu">
+      <Filter>data</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\dataparsers\dataparserfactory.cu">
+      <Filter>dataparsers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\dataparsers\image\jpegdataparser.cu">
+      <Filter>dataparsers\image</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tests\dataparsers\image\testjpegdataparser.cu">
+      <Filter>tests\dataparsers\image</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tests\testingutils.cu">
+      <Filter>tests</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tests\testsdriver.cu">
+      <Filter>tests</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\neuralnetwork\neuralnet.cu">
+      <Filter>neuralnetwork</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\neuralnetwork\activationfunctions.cu">
+      <Filter>neuralnetwork</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\neuralnetwork\layers\inputlayer.cu">
+      <Filter>neuralnetwork\layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\neuralnetwork\layers\convolutionallayer.cu">
+      <Filter>neuralnetwork\layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\neuralnetwork\layers\standardlayer.cu">
+      <Filter>neuralnetwork\layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tests\neuralnetwork\layers\testconvolutionallayer.cu">
+      <Filter>tests\neuralnetwork\layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tests\neuralnetwork\layers\mock\mockinputlayer.cu">
+      <Filter>tests\neuralnetwork\layers\mock</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tests\neuralnetwork\layers\mock\mockconvolutionallayer.cu">
+      <Filter>tests\neuralnetwork\layers\mock</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\neuralnetwork\layers\maxpoollayer.cu">
+      <Filter>neuralnetwork\layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\neuralnetwork\layers\layer.cu">
+      <Filter>neuralnetwork\layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tests\neuralnetwork\layers\mock\mockmaxpoollayer.cu">
+      <Filter>tests\neuralnetwork\layers\mock</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tests\neuralnetwork\layers\testmaxpoollayer.cu">
+      <Filter>tests\neuralnetwork\layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\neuralnetwork\layers\responsenormalizationlayer.cu">
+      <Filter>neuralnetwork\layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tests\neuralnetwork\layers\mock\mockresponsenormalizationlayer.cu">
+      <Filter>tests\neuralnetwork\layers\mock</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tests\neuralnetwork\layers\testresponsenormalizationlayer.cu">
+      <Filter>tests\neuralnetwork\layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tests\neuralnetwork\layers\mock\mockstandardlayer.cu">
+      <Filter>tests\neuralnetwork\layers\mock</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tests\neuralnetwork\layers\teststandardlayer.cu">
+      <Filter>tests\neuralnetwork\layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\neuralnetwork\layers\dropoutlayer.cu">
+      <Filter>neuralnetwork\layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tests\neuralnetwork\layers\mock\mockdropoutlayer.cu">
+      <Filter>tests\neuralnetwork\layers\mock</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tests\neuralnetwork\layers\testdropoutlayer.cu">
+      <Filter>tests\neuralnetwork\layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\neuralnetwork\layers\softmaxlayer.cu">
+      <Filter>neuralnetwork\layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tests\neuralnetwork\layers\mock\mocksoftmaxlayer.cu">
+      <Filter>tests\neuralnetwork\layers\mock</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tests\neuralnetwork\layers\testsoftmaxlayer.cu">
+      <Filter>tests\neuralnetwork\layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\neuralnetwork\layers\outputlayer.cu">
+      <Filter>neuralnetwork\layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tests\neuralnetwork\layers\mock\mockoutputlayer.cu">
+      <Filter>tests\neuralnetwork\layers\mock</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tests\neuralnetwork\layers\testoutputlayer.cu">
+      <Filter>tests\neuralnetwork\layers</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\utils\consolehelper.cu">
+      <Filter>utils</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\neuralnetwork\matrixoperations.cu">
+      <Filter>neuralnetwork</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\neuralnetwork\configurationparser.cu">
+      <Filter>neuralnetwork</Filter>
+    </CudaCompile>
+    <CudaCompile Include="src\tools\featurizer.cu">
+      <Filter>tools</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\utils\include\utils.cuh">
+      <Filter>utils\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tools\include\datamaker.cuh">
+      <Filter>tools\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tools\include\trainer.cuh">
+      <Filter>tools\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dataparsers\include\dataparser.cuh">
+      <Filter>dataparsers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\include\imagedata.cuh">
+      <Filter>data\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dataparsers\include\dataparserfactory.cuh">
+      <Filter>dataparsers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dataparsers\image\include\jpegdataparser.cuh">
+      <Filter>dataparsers\image\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\dataparsers\image\include\testjpegdataparser.cuh">
+      <Filter>tests\dataparsers\image\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\include\testingutils.cuh">
+      <Filter>tests\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\include\testsdriver.cuh">
+      <Filter>tests\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\include\abstracttester.cuh">
+      <Filter>tests\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\include\config.cuh">
+      <Filter>utils\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\neuralnetwork\include\neuralnet.cuh">
+      <Filter>neuralnetwork\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\neuralnetwork\layers\include\layer.cuh">
+      <Filter>neuralnetwork\layers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\neuralnetwork\include\activationfunctions.cuh">
+      <Filter>neuralnetwork\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\neuralnetwork\layers\include\inputlayer.cuh">
+      <Filter>neuralnetwork\layers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\neuralnetwork\layers\include\convolutionallayer.cuh">
+      <Filter>neuralnetwork\layers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\neuralnetwork\layers\include\standardlayer.cuh">
+      <Filter>neuralnetwork\layers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\neuralnetwork\layers\include\testconvolutionallayer.cuh">
+      <Filter>tests\neuralnetwork\layers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\neuralnetwork\layers\mock\include\mockinputlayer.cuh">
+      <Filter>tests\neuralnetwork\layers\mock\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\neuralnetwork\layers\mock\include\mockconvolutionallayer.cuh">
+      <Filter>tests\neuralnetwork\layers\mock\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\neuralnetwork\layers\include\maxpoollayer.cuh">
+      <Filter>neuralnetwork\layers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\neuralnetwork\layers\mock\include\mockmaxpoollayer.cuh">
+      <Filter>tests\neuralnetwork\layers\mock\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\neuralnetwork\layers\include\testmaxpoollayer.cuh">
+      <Filter>tests\neuralnetwork\layers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\neuralnetwork\layers\include\responsenormalizationlayer.cuh">
+      <Filter>neuralnetwork\layers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\neuralnetwork\layers\mock\include\mockresponsenormalizationlayer.cuh">
+      <Filter>tests\neuralnetwork\layers\mock\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\neuralnetwork\layers\include\testresponsenormalizationlayer.cuh">
+      <Filter>tests\neuralnetwork\layers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\neuralnetwork\layers\mock\include\mockstandardlayer.cuh">
+      <Filter>tests\neuralnetwork\layers\mock\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\neuralnetwork\layers\include\teststandardlayer.cuh">
+      <Filter>tests\neuralnetwork\layers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\neuralnetwork\layers\include\dropoutlayer.cuh">
+      <Filter>neuralnetwork\layers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\neuralnetwork\layers\mock\include\mockdropoutlayer.cuh">
+      <Filter>tests\neuralnetwork\layers\mock\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\neuralnetwork\layers\include\testdropoutlayer.cuh">
+      <Filter>tests\neuralnetwork\layers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\neuralnetwork\layers\include\softmaxlayer.cuh">
+      <Filter>neuralnetwork\layers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\neuralnetwork\layers\mock\include\mocksoftmaxlayer.cuh">
+      <Filter>tests\neuralnetwork\layers\mock\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\neuralnetwork\layers\include\testsoftmaxlayer.cuh">
+      <Filter>tests\neuralnetwork\layers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\neuralnetwork\layers\include\outputlayer.cuh">
+      <Filter>neuralnetwork\layers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\neuralnetwork\layers\mock\include\mockoutputlayer.cuh">
+      <Filter>tests\neuralnetwork\layers\mock\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\neuralnetwork\layers\include\testoutputlayer.cuh">
+      <Filter>tests\neuralnetwork\layers\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\utils\include\consolehelper.cuh">
+      <Filter>utils\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\neuralnetwork\include\matrixoperations.cuh">
+      <Filter>neuralnetwork\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\neuralnetwork\include\configurationparser.cuh">
+      <Filter>neuralnetwork\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tools\include\featurizer.cuh">
+      <Filter>tools\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
